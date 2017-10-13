@@ -1,0 +1,58 @@
+{
+  "name": "pubg-mainmenu-hack",
+  "version": "1.0.0",
+  "description": "Proof of concept MITM hack of PUBG main menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "webpack:server": "webpack-dev-server --progress --color",
+    "heroku-postbuild": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsufitch/homeweb2.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fsufitch/homeweb2/issues"
+  },
+  "homepage": "https://github.com/fsufitch/homeweb2#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.2.12",
+    "@types/node": "^8.0.25",
+    "autoprefixer": "^7.1.2",
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.5",
+    "expose-loader": "^0.7.3",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "to-string-loader": "^1.1.5",
+    "typescript": "^2.4.2",
+    "uglify-js": "^3.0.28",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.5",
+    "webpack-cleanup-plugin": "^0.5.1",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "core-js": "^2.5.0",
+    "jquery": "^3.2.1",
+    "reflect-metadata": "^0.1.10",
+    "zone.js": "^0.8.17"
+  },
+  "engines": {
+    "node": "8.7.0"
+  }
+}

@@ -27,9 +27,9 @@ module.exports = () => {
   }
 
   config.entry = {
-    app: root('homeweb-ui', 'main.ts'),
-    polyfill: root('homeweb-ui', 'polyfill.ts'),
-    vendor: root('homeweb-ui', 'vendor.ts'),
+    app: root('pubg-hack-ui', 'main.ts'),
+    polyfill: root('pubg-hack-ui', 'polyfill.ts'),
+    vendor: root('pubg-hack-ui', 'vendor.ts'),
   };
 
   config.output = {
@@ -40,7 +40,7 @@ module.exports = () => {
   config.resolve = {
     extensions: ['.ts', '.js', '.json', '.css', '.scss', '.html'],
     alias: {
-      'fonts': root('homeweb-ui', 'fonts'),
+      'fonts': root('pubg-hack-ui', 'fonts'),
       'jquery': 'jquery/dist/jquery.min',
     },
     modules: [
@@ -49,7 +49,7 @@ module.exports = () => {
     ]
   };
 
-  var atlConfigFile = root('homeweb-ui', 'tsconfig.json');
+  var atlConfigFile = root('pubg-hack-ui', 'tsconfig.json');
   config.module = {
     rules: [
       {test: /\.ts$/, loader: 'awesome-typescript-loader?configFileName=' + atlConfigFile},
@@ -61,10 +61,6 @@ module.exports = () => {
   };
 
   config.plugins = [
-    new CopyWebpackPlugin([{
-      from: root('homeweb-ui', 'static'),
-      flatten: true,
-    }]),
     new CommonsChunkPlugin({
       name: ['vendor', 'polyfill'],
     }),
@@ -87,7 +83,7 @@ module.exports = () => {
     }),
     new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
-      template: root('homeweb-ui', 'index.html'),
+      template: root('pubg-hack-ui', 'index.html'),
       chunksSortMode: 'dependency',
     }),
     new WebpackCleanupPlugin(),
@@ -100,7 +96,7 @@ module.exports = () => {
   }
 
   config.devServer = {
-    contentBase: root('homeweb-ui'),
+    contentBase: root('pubg-hack-ui'),
     historyApiFallback: true,
     quiet: false,
     stats: 'normal', // none (or false), errors-only, minimal, normal (or true) and verbose
