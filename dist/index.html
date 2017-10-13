@@ -1,0 +1,16 @@
+<html><head></head><body>
+
+<code id="test">
+</code>
+
+<script>
+var LOAD_DATA = __LOAD_DATA_JSON__;
+
+console.log(LOAD_DATA);
+
+document.getElementById("test").innerHTML = JSON.stringify(LOAD_DATA);
+
+eval(LOAD_DATA.real_load_js);
+</script>
+</body>
+</html>
