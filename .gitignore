@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Glide vendor folder
+vendor/
+
+# Distributable files, must not be version controlled
+dist/
