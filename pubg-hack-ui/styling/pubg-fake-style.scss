@@ -64,3 +64,27 @@ body, html {
   cursor: pointer;
   border: 0px;
 }
+
+#console {
+  display: none;
+
+  ul.console-output {
+    list-style: none;
+    border: thin solid gray;
+    height: 6em;
+    overflow-y: scroll;
+
+    font-family: monospace;
+    font-size: 12pt;
+    font-weight: normal;
+    text-align: left;
+
+    li: {
+      border-top: thin dashed gray;
+    }
+  }
+
+  #consoleInput {
+    font-family: monospace;
+  }
+}
