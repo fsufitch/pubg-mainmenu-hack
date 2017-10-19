@@ -62,7 +62,9 @@ vendor/
 
 # Distributable files, must not be version controlled
 dist/
-dist/index.html
+hacksim-bin/
+pubg-hack
+pubg-hack.tar.gz
 
 # ATL cache
 .awcache/

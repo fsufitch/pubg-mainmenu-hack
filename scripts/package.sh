@@ -1,6 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-cd $(dirname $(dirname $0))  # Return to root
+ROOT_PATH=$( cd $(dirname $0) ; pwd -P )/..
+cd $ROOT_PATH
 
 GOOS=linux GOARCH=amd64 go build -v -o pubg-hack
 npm run webpack
