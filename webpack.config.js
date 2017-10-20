@@ -86,6 +86,9 @@ module.exports = () => {
       template: root('pubg-hack-ui', 'index.html'),
       chunksSortMode: 'dependency',
     }),
+    new CopyWebpackPlugin([{
+      from: root('pubg-hack-ui', 'coherent.js'),
+    }]),
     new WebpackCleanupPlugin(),
   ];
 
