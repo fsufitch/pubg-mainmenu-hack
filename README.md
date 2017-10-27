@@ -1,6 +1,6 @@
 # PUBG Main Menu MITM Demo 
 
-This repository contains the demo source code for the vulnerability in PUBG's Main Menu, as featured [here](https://medium.com/@fsufitch/playerunknowns-battlegrounds-main-menu-is-vulnerable-to-hacking-d483b00a7036).
+This repository contains the demo source code for the vulnerability in PUBG's Main Menu, as featured [here](https://medium.com/@fsufitch/playerunknowns-battlegrounds-main-menu-is-vulnerable-to-hacking-d483b00a7036). **The issue has since been fixed**, as detailed [here](https://medium.com/@fsufitch/pubg-main-menu-hack-its-fixed-cbad28c706fa).
 
 A live version can be found at [http://104.239.228.225/index.html](http://104.239.228.225/index.html).
 
